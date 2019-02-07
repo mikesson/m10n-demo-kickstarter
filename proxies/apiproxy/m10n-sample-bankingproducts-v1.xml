@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="m10n-sample-bankingproducts-v1">
+    <Basepaths>/m10n-sample/banking/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1549454610474</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>API listing available products</Description>
+    <DisplayName>M10n Sample - Banking Products API</DisplayName>
+    <LastModifiedAt>1549461849664</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:8d6f0c278d467a0a7a5b409015fc3cc1268898071fbdffe9ca86fd2bc33e0d0ce5da9b641df9db4a2fdf5bf8d047844df53581c64bf317acee290e96360fe72c</ManifestVersion>
+    <Policies>
+        <Policy>Monetization-Limits-Check</Policy>
+        <Policy>Set-Variable-Success-Transaction</Policy>
+        <Policy>Spike-Arrest</Policy>
+        <Policy>Verify-API-Key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

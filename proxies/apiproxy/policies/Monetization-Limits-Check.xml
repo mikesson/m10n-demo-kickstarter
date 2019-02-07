@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MonetizationLimitsCheck enabled="true" continueOnError="false" async="false" name="Monetization-Limits-Check">
+    <DisplayName>Monetization-Limits-Check</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <Properties/>
+    <Variables>
+        <ClientId>request.queryparam.apikey</ClientId>
+        <Product>apiproduct.name</Product>
+        <Currency>gbp</Currency>
+    </Variables>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="text/xml">
+                <error>
+                    <messages>
+                        <message>Exceeded developer limit configuration - {monetizationLimits.limitsMessageList} </message>
+                        <message>Is Developer Suspended - {monetizationLimits.isDeveloperSuspended} </message>
+                    </messages>
+                </error>
+            </Payload>
+            <StatusCode>403</StatusCode>
+            <ReasonPhrase>Forbidden</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+</MonetizationLimitsCheck>
