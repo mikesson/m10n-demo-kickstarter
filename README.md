@@ -20,13 +20,17 @@ The script covers the first 5 steps described [here](https://docs.apigee.com/api
 - Export your Apigee username, password and target organization as environment variables
 (you can also skip this and enter these details within the script)
 
-`export USERNAME=<your_apigee_username>`
-`export PASSWORD=<your_apigee_password>`
-`export ORG_NAME=<your_org_name>`
+```
+export USERNAME=<your_apigee_username>
+export PASSWORD=<your_apigee_password>
+export ORG_NAME=<your_org_name>
+```
 
 - Run the script
 
-`./setup_edge.sh`
+```
+./setup_edge.sh
+```
 
 #### 1. Org Profile
 - After the credentials and org name have been set, the first step allows you to configure the profile settings. Review the JSON payload returned showing the current configuration. For Monetization, an organization address and default currency is required.
